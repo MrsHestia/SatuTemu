@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --color-warmBase: #FBF6EE;
+  --color-primary: #D96C63;
+  --color-amber: #E0A84A;
+  --color-clay: #CDB4A4;
+  --color-cocoa: #5B3E2B;
+  --color-neutralSoft: #EDE2D6;
+}
+
+/* small helper to use Fraunces for headings */
+.h-fraunces{ font-family: Fraunces, serif; }
