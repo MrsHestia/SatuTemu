@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import {
-  Home 
-  Heart 
-  Users 
-  User
-  X
-  MapPin
-  ShieldCheck
-  BadgeCheck
-  MessageCircle
-  Phone
-  Video
-  Coffee
-  Star
-  Ruler
-  Briefcase
-  ChevronLeft
-  AlertTriangle
+  Home, 
+  Heart, 
+  Users, 
+  User,
+  X,
+  MapPin,
+  ShieldCheck,
+  BadgeCheck,
+  MessageCircle,
+  Phone,
+  Video,
+  Coffee,
+  Star,
+  Ruler,
+  Briefcase,
+  ChevronLeft,
+  AlertTriangle,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -84,7 +84,7 @@ const rupiah = (n) => "Rp" + n.toLocaleString("id-ID");
 function BottomNav({ active, onChange }) {
   const items = [
     { key: "home", label: "Beranda", icon: Home },
-    { key: "matchmaker", label: "Cocokkan", icon: Heart },
+    { key: "matchmaker", label: "Cari", icon: Heart },
     { key: "talents", label: "Teman", icon: Users },
     { key: "profile", label: "Akun", icon: User },
   ];
@@ -144,7 +144,7 @@ function LandingScreen({ onPick }) {
             Cari Pasangan
           </h2>
           <p className="text-rose-50 text-sm max-w-[220px]">
-            Cocokkan profil, saling suka, lalu lanjut ngobrol di luar aplikasi.
+          Lihat langsung daftar profil, lengkap dengan foto, usia, tinggi badan, dan pekerjaan.
           </p>
         </button>
 
@@ -171,7 +171,7 @@ function LandingScreen({ onPick }) {
           {[
             { icon: ShieldCheck, text: "Semua profil terverifikasi manual" },
             { icon: X, text: "Tidak ada konten dewasa / NSFW" },
-            { icon: BadgeCheck, text: "Matchmaker khusus pria–wanita" },
+            { icon: BadgeCheck, text: "Profil pria & wanita, tanpa proses swipe" },
           ].map(({ icon: Icon, text }, i) => (
             <div
               key={i}
@@ -516,7 +516,7 @@ function ProfileScreen() {
         </div>
       </div>
       <div className="flex flex-col gap-1">
-        {["Preferensi Matchmaker", "Riwayat Booking", "Pusat Bantuan & Laporan", "Pengaturan Privasi"].map(
+        ["Riwayat Lihat Profil", "Riwayat Booking", "Pusat Bantuan & Laporan", "Pengaturan Privasi"].map(
           (label) => (
             <button
               key={label}
@@ -532,7 +532,7 @@ function ProfileScreen() {
 }
 
 /* ------------------------------------------------------------------ */
-/* Root App                                                            */
+/* Root App                                                           */
 /* ------------------------------------------------------------------ */
 
 export default function App() {
