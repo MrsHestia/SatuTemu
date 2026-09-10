@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import {
-  Home,
-  Heart,
-  Users,
-  User,
-  X,
-  MapPin,
-  ShieldCheck,
-  BadgeCheck,
-  MessageCircle,
-  Phone,
-  Video,
-  Coffee,
-  Star,
-  Copy,
-  ChevronLeft,
-  AlertTriangle,
+  Home 
+  Heart 
+  Users 
+  User
+  X
+  MapPin
+  ShieldCheck
+  BadgeCheck
+  MessageCircle
+  Phone
+  Video
+  Coffee
+  Star
+  Ruler
+  Briefcase
+  ChevronLeft
+  AlertTriangle
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
